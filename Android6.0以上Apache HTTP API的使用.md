@@ -1,6 +1,6 @@
 # Android 6.0（API 23）以上org.apache.http.*的使用
 
-Android 6.0（API 23）以上不再提供org.apache.http.*，只保留几个类。==GOOGLE==建议使用==HttpUrlConnection==类，因为它可以通过透明压缩和响应缓存减少网络使用，并可最大限度降低耗电量。如需继续使用Apache HTTP API,必须在==build.gradle==文件中声明以下编译时依赖项：
+Android 6.0（API 23）以上不再提供org.apache.http.*，只保留几个类。<font color=#ff0000>GOOGLE</font>建议使用HttpUrlConnection类，因为它可以通过透明压缩和响应缓存减少网络使用，并可最大限度降低耗电量。如需继续使用Apache HTTP API,必须在build.gradle文件中声明以下编译时依赖项：
 ```
 android {
     useLibrary 'org.apache.http.legacy'
